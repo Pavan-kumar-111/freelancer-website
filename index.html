@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pavan Kumar | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header class="topbar">
+    <button id="burger" aria-label="Toggle navigation"><span></span></button>
+    <h1 class="logo">Pavan Kumar</h1>
+    <button id="themeToggle" aria-label="Toggle dark mode"><i data-feather="moon"></i></button>
+  </header>
+
+  <nav id="drawer" class="drawer">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#portfolio" class="nav-link">Portfolio</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <section class="hero glass">
+    <h2>Hello, I’m Pavan Kumar</h2>
+    <p>Freelance Web Developer</p>
+    <a href="#contact" class="btn primary">Hire Me</a>
+  </section>
+
+  <section id="about" class="section glass">
+    <h2>About Me</h2>
+    <p>I build clean, responsive websites using HTML, CSS, JavaScript and modern frameworks. My goal is to turn ideas into beautiful, fast, accessible experiences on the web.</p>
+  </section>
+
+  <section id="services" class="section glass">
+    <h2>Services</h2>
+    <div class="grid services">
+      <div class="card">🌐 Custom Web Apps</div>
+      <div class="card">📱 Responsive Design</div>
+      <div class="card">⚙️ Maintenance & SEO</div>
+      <div class="card">🛒 e-Commerce Builds</div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section glass">
+    <h2>Portfolio</h2>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="landing">Landing</button>
+      <button class="filter-btn" data-filter="business">Business</button>
+      <button class="filter-btn" data-filter="personal">Personal</button>
+    </div>
+    <div class="grid portfolio">
+      <div class="card" data-cat="landing">💻 Tech Landing Page</div>
+      <div class="card" data-cat="business">📊 Analytics Dashboard</div>
+      <div class="card" data-cat="personal">🎨 Designer Portfolio</div>
+      <div class="card" data-cat="business">🏪 Retail Site</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section glass">
+    <h2>Contact Me</h2>
+    <form id="contactForm" novalidate>
+      <input type="text" id="name" placeholder="Your Name" required/>
+      <input type="email" id="email" placeholder="Your Email" required/>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <footer class="footer glass">
+    © 2025 Pavan Kumar | All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
