@@ -3,76 +3,138 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pavan Kumar | Web Developer</title>
+  <title>Pavan Kumar | Full Stack Java Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet"/>
-  <script src="https://unpkg.com/feather-icons"></script>
   <link rel="stylesheet" href="style.css"/>
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
 
+  <!-- HEADER -->
   <header class="topbar">
     <button id="burger" aria-label="Toggle navigation"><span></span></button>
     <h1 class="logo">Pavan Kumar</h1>
-    <button id="themeToggle" aria-label="Toggle dark mode"><i data-feather="moon"></i></button>
+    <button id="themeToggle" aria-label="Toggle dark mode">
+      <i data-feather="moon"></i>
+    </button>
   </header>
 
+  <!-- NAVIGATION -->
   <nav id="drawer" class="drawer">
     <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
     <a href="#services" class="nav-link">Services</a>
+    <a href="#experience" class="nav-link">Experience</a>
     <a href="#portfolio" class="nav-link">Portfolio</a>
+    <a href="#education" class="nav-link">Education</a>
     <a href="#contact" class="nav-link">Contact</a>
   </nav>
 
+  <!-- HERO -->
   <section class="hero glass">
     <h2>Hello, I’m Pavan Kumar</h2>
-    <p>Freelance Web Developer</p>
+    <p>Full Stack Java Developer | Spring Boot | React | MySQL</p>
     <a href="#contact" class="btn primary">Hire Me</a>
+    <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
   </section>
 
+  <!-- ABOUT -->
   <section id="about" class="section glass">
     <h2>About Me</h2>
-    <p>I build clean, responsive websites using HTML, CSS, JavaScript and modern frameworks. My goal is to turn ideas into beautiful, fast, accessible experiences on the web.</p>
+    <p>I build scalable backend systems with Java and Spring Boot, and create modern, responsive frontends using React.js. My passion lies in turning ideas into functional, efficient, and visually appealing applications that deliver great user experiences.</p>
   </section>
 
-  <section id="services" class="section glass">
-    <h2>Services</h2>
-    <div class="grid services">
-      <div class="card">🌐 Custom Web Apps</div>
-      <div class="card">📱 Responsive Design</div>
-      <div class="card">⚙️ Maintenance & SEO</div>
-      <div class="card">🛒 e-Commerce Builds</div>
+  <!-- SKILLS -->
+  <section id="skills" class="section glass">
+    <h2>Technical Skills</h2>
+    <div class="grid skills">
+      <div class="card">☕ Java</div>
+      <div class="card">🌀 Spring Boot</div>
+      <div class="card">🔗 REST APIs</div>
+      <div class="card">🗄 MySQL</div>
+      <div class="card">🍃 MongoDB</div>
+      <div class="card">⚛️ React.js</div>
+      <div class="card">🎨 HTML / CSS</div>
+      <div class="card">📜 JavaScript</div>
+      <div class="card">🐙 Git & GitHub</div>
     </div>
   </section>
 
+  <!-- SERVICES -->
+  <section id="services" class="section glass">
+    <h2>Services</h2>
+    <div class="grid services">
+      <div class="card">🌐 Full Stack Web Apps</div>
+      <div class="card">📱 Responsive UI/UX</div>
+      <div class="card">⚙️ API Development</div>
+      <div class="card">🛒 e-Commerce Solutions</div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section glass">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Intern | Sathya Technologies</h3>
+        <p>Developed Bank Management System and Contact Manager applications using Spring Boot, MySQL, React.js, and REST APIs.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Freelance Projects</h3>
+        <p>Delivered multiple responsive websites and full stack applications for clients, focusing on performance and user experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
   <section id="portfolio" class="section glass">
     <h2>Portfolio</h2>
     <div class="filter-bar">
       <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="landing">Landing</button>
-      <button class="filter-btn" data-filter="business">Business</button>
-      <button class="filter-btn" data-filter="personal">Personal</button>
+      <button class="filter-btn" data-filter="java">Java</button>
+      <button class="filter-btn" data-filter="react">React</button>
+      <button class="filter-btn" data-filter="fullstack">Full Stack</button>
     </div>
     <div class="grid portfolio">
-      <div class="card" data-cat="landing">💻 Tech Landing Page</div>
-      <div class="card" data-cat="business">📊 Analytics Dashboard</div>
-      <div class="card" data-cat="personal">🎨 Designer Portfolio</div>
-      <div class="card" data-cat="business">🏪 Retail Site</div>
+      <div class="card" data-cat="java">💳 GPay-like UPI App</div>
+      <div class="card" data-cat="fullstack">🎵 MP3 Player Web App</div>
+      <div class="card" data-cat="react">📇 Contact Manager App</div>
+      <div class="card" data-cat="java">🏦 Bank Management System</div>
     </div>
   </section>
 
+  <!-- EDUCATION -->
+  <section id="education" class="section glass">
+    <h2>Education & Certifications</h2>
+    <ul>
+      <li><strong>B.Sc.</strong> – Graduated with strong focus on programming fundamentals.</li>
+      <li><strong>Full Stack Java Developer</strong> – Sathya Technologies, Grade A.</li>
+      <li>Certifications in Data Structures & Algorithms, MongoDB, and Web Development.</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
   <section id="contact" class="section glass">
     <h2>Contact Me</h2>
     <form id="contactForm" novalidate>
-      <input type="text" id="name" placeholder="Your Name" required/>
-      <input type="email" id="email" placeholder="Your Email" required/>
-      <textarea id="message" placeholder="Your Message" required></textarea>
+      <input type="text" id="name" name="name" placeholder="Your Name" required/>
+      <input type="email" id="email" name="email" placeholder="Your Email" required/>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
       <button type="submit" class="btn primary">Send Message</button>
       <p id="formMsg"></p>
     </form>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer glass">
-    © 2025 Pavan Kumar | All rights reserved.
+    <div>
+      © 2025 Pavan Kumar | All rights reserved.
+      <div class="social-icons">
+        <a href="https://github.com/yourusername" target="_blank"><i data-feather="github"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank"><i data-feather="linkedin"></i></a>
+        <a href="mailto:you@example.com"><i data-feather="mail"></i></a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
