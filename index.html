@@ -10,14 +10,22 @@
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="topbar">
-    <button id="burger" aria-label="Toggle navigation"><span></span></button>
+<!-- HEADER -->
+<header class="topbar">
+<button id="burger" aria-label="Toggle navigation">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+  <div class="logo-container">
+    <img src="profile-photo.jpg" alt="Pavan Kumar" class="profile-pic" />
     <h1 class="logo">Pavan Kumar</h1>
-    <button id="themeToggle" aria-label="Toggle dark mode">
-      <i data-feather="moon"></i>
-    </button>
-  </header>
+  </div>
+
+  <button id="themeToggle" aria-label="Toggle dark mode">
+    <i data-feather="moon"></i>
+  </button>
+</header>
 
   <!-- NAVIGATION -->
   <nav id="drawer" class="drawer">
@@ -35,13 +43,13 @@
     <h2>Hello, I’m Pavan Kumar</h2>
     <p>Full Stack Java Developer | Spring Boot | React | MySQL</p>
     <a href="#contact" class="btn primary">Hire Me</a>
-    <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
+    <a href="PavanKumarResume.pdf" class="btn secondary" download>Download Resume</a>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="section glass">
     <h2>About Me</h2>
-    <p>I build scalable backend systems with Java and Spring Boot, and create modern, responsive frontends using React.js. My passion lies in turning ideas into functional, efficient, and visually appealing applications that deliver great user experiences.</p>
+    <p>I specialize in building scalable and efficient backend systems with Java and Spring Boot, and crafting modern, responsive user interfaces with React.js. I’m passionate about transforming ideas into robust, high-performance applications that combine functionality, efficiency, and engaging design to deliver exceptional user experiences.</p>
   </section>
 
   <!-- SKILLS -->
@@ -86,17 +94,17 @@
     </div>
   </section>
 
-  <!-- PORTFOLIO -->
+  <!-- PROJECTS -->
   <section id="portfolio" class="section glass">
-    <h2>Portfolio</h2>
+    <h2>Projects</h2>
     <div class="filter-bar">
       <button class="filter-btn active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="java">Java</button>
       <button class="filter-btn" data-filter="react">React</button>
       <button class="filter-btn" data-filter="fullstack">Full Stack</button>
     </div>
-    <div class="grid portfolio">
-      <div class="card" data-cat="java">💳 GPay-like UPI App</div>
+      <div class="grid portfolio">
+      <div class="card" data-cat="java">👤 Portfolio</div>
       <div class="card" data-cat="fullstack">🎵 MP3 Player Web App</div>
       <div class="card" data-cat="react">📇 Contact Manager App</div>
       <div class="card" data-cat="java">🏦 Bank Management System</div>
@@ -130,13 +138,18 @@
     <div>
       © 2025 Pavan Kumar | All rights reserved.
       <div class="social-icons">
-        <a href="https://github.com/yourusername" target="_blank"><i data-feather="github"></i></a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank"><i data-feather="linkedin"></i></a>
-        <a href="mailto:you@example.com"><i data-feather="mail"></i></a>
+        <a href="https://github.com/Pavan-kumar-111" target="_blank"><i data-feather="github"></i></a>
+        <a href="https://www.linkedin.com/in/-pavan-kumar" target="_blank"><i data-feather="linkedin"></i></a>
+        <a href="mailto:pavankumarofficial.111@gmail.com"><i data-feather="mail"></i></a>
       </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init('EsWrBOSm9pZoZOb6g'); // Public key
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

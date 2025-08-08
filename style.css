@@ -136,12 +136,12 @@ body.dark-theme #themeToggle .fa-sun {
 .drawer {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   flex-wrap: wrap;
   padding: 12px;
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(10px);
-  transition: max-height 0.4s ease, opacity 0.4s ease;
+  transition: max-height 0.2s ease-in-out, opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -151,15 +151,19 @@ body.dark-theme #themeToggle .fa-sun {
     overflow: hidden;
     max-height: 0;
     opacity: 0;
+    transform: translateY(-15px);
   }
   .drawer.nav-open {
-    max-height: 300px;
+    max-height: 300px; /* adjust if you have more menu items */
     opacity: 1;
+    transform: translateY(0);
   }
   #burger {
     display: block;
+    cursor: pointer;
   }
 }
+
 
 .nav-link {
   text-decoration: none;
@@ -286,7 +290,7 @@ body.dark-theme .btn.secondary:hover {
 .grid.services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  gap: 10px;
   margin-top: 20px;
 }
 
@@ -416,5 +420,28 @@ body.dark-theme .social-icons a:hover {
   .btn {
     width: 100%;
     text-align: center;
+  }
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .logo-container .logo {
+    font-size: 16px;
+  }
+  .profile-pic {
+    width: 24px;
+    height: 24px;
   }
 }
