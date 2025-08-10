@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  background: linear-gradient(135deg, #cadaf8 0%, #cfdef3 100%);
   color: #111;
   min-height: 100vh;
   line-height: 1.6;
@@ -283,8 +283,8 @@ body.dark-theme .btn.secondary:hover {
 .grid.skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 18px;
-  margin-top: 20px;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .grid.services {
